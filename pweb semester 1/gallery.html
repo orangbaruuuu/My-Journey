@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="Website Icon" type="png" href="media/images.png">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css gallery.css">
+    <script>
+        console.log("Universitas Pamulang");
+    </script>
+    <style>
+        .bungkus{
+            width: 700px;
+            margin: auto;
+            padding: 10px;
+            
+        }
+        .gallery{
+            float: left;
+            margin: 10px;
+            text-align: center;
+            font-size: 12px;
+            font-family: arial;
+            border: 1px solid #333;
+        }
+        img{
+            width: 150px;
+            height: 100px;
+        }
+        .jv{
+           float: right;
+           padding: 5px;
+       }
+       h1{
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="article.html">Article</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact us.html">Contact</a> 
+        <a href="about us.html">About Us</a>
+    </div>
+    <div id="content">
+        <div class="jv">
+            <script>
+                var waktu = new Date();
+                var jam = waktu.getHours();
+                var tgl = waktu.getDate();
+                var bln = waktu.getMonth();
+                var thn = waktu.getFullYear();
+                var hr = waktu.getDay();
+                var mnt = waktu.getMinutes();
+    
+                var hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
+                var bulan = ["Januari", "Febuari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober","November", "Desember"];
+                
+                if (jam<=9) {
+                        document.write("<br>Selamat Pagi</br>");
+                    }else if(jam<=14) {
+                        document.write("<br>Selamat Siang</br>");
+                    }else if(jam<=18) {
+                        document.write("<br>Selamat Sore</br>");
+                    }else {
+                        document.write("<br>Selamat Malam</br>");
+                    }
+                document.write(hari[hr]+", "+tgl+" "+bulan[bln]+" "+thn+", "+jam+":"+mnt+" WIB");
+                
+            </script>
+            </div> 
+            
+        <div class="bungkus">
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <img src="media/istockphoto-1371936627-2048x2048.jpg"><br>BANNER</br>
+            </div>
+            <div class="gallery">
+                <img src="media/table-tennis-1428052_640.jpg"><br>TENIS</br>
+            </div>
+            <div class="gallery">
+                <img src="media/table-tennis-407489_1280.jpg"><br>TENIS</br>
+            </div>
+            <div class="gallery">
+                <img src="media/istockphoto-1192307192-612x612.jpg"><br>BED</br>
+            </div>
+            <div class="gallery">
+                <img src="media/istockphoto-1502972945-612x612.jpg"><br>NET</br>
+            </div>
+            <div class="gallery">
+                <img src="media/istockphoto-1502973050-612x612.jpg"><br>MEJA</br>
+            </div>
+            <div class="gallery">
+                <img src="media/istockphoto-1419224066-612x612.jpg"><br>BOLA</br>
+            </div>
+            <div class="gallery">
+                <img src="media/table-tennis-1208384_640.jpg"><br>ATLET TENIS MEJA</br>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; CopyRight 2023-Muhammad Valdhano Zainal-231011700274-01SIFP005</p>
+    </div>
+</body>
+</html>

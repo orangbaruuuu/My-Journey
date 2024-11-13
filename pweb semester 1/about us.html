@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="Website Icon" type="png" href="media/images.png">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="styleabout.css">
+    <script>
+        console.log("Universitas Pamulang");
+    </script>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .gambar{
+            float: left;
+            margin: 10px;
+            text-align: center;
+            font-size: 12px;
+            font-family: arial;
+            border: 0px solid #333;
+            padding-top: 50px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            padding: 10px 0px 10px 10px;
+            float: left;
+            border-radius: 20px;
+            padding: 5px 0px 5px 0px;
+        }
+        .jv{
+           float: right;
+           padding: 5px;
+       }
+       p{
+            text-align: justify;
+       }
+       .about{
+            width: 800px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px;
+            padding-left: 50px;
+       }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="article.html">Article</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact us.html">Contact</a> 
+        <a href="about us.html">About Us</a>
+    </div>
+    <div id="content">
+        <div class="jv">
+            <script>
+                var waktu = new Date();
+                var jam = waktu.getHours();
+                var tgl = waktu.getDate();
+                var bln = waktu.getMonth();
+                var thn = waktu.getFullYear();
+                var hr = waktu.getDay();
+                var mnt = waktu.getMinutes();
+    
+                var hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
+                var bulan = ["Januari", "Febuari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober","November", "Desember"];
+                
+                if (jam<=9) {
+                        document.write("<br>Selamat Pagi</br>");
+                    }else if(jam<=14) {
+                        document.write("<br>Selamat Siang</br>");
+                    }else if(jam<=18) {
+                        document.write("<br>Selamat Sore</br>");
+                    }else {
+                        document.write("<br>Selamat Malam</br>");
+                    }
+                document.write(hari[hr]+", "+tgl+" "+bulan[bln]+" "+thn+", "+jam+":"+mnt+" WIB");
+                
+            </script>
+            </div> 
+            <div class="gambar"><img src="media/foto.jpeg"><br><i>Penulis, M Valdhano Zainal</i></br></div>
+        <div class="about">
+        <h1>About Us</h1>
+        <p>Kami adalah sekelompok pecinta tenis meja yang terinspirasi oleh semangat pantang menyerah, kecepatan, dan akurasi olahraga ini. Dilahirkan dari kecintaan terhadap "ping pong", kami hadir untuk memperluas jangkauan tenis meja di Indonesia, dan berbagi semangat kompetitif yang sehat serta keceriaan permainan ini kepada semua orang.</p>
+        <p><br><b>Misi</b></br>
+        <ul>
+            <li><b>Menumbuhkan komunitas tenis meja:</b> Kami ingin membangun komunitas yang inklusif dan ramah bagi para pemain tenis meja dari semua usia dan tingkat keahlian. Kami percaya bahwa tenis meja adalah olahraga untuk semua orang, dan kami ingin menciptakan ruang yang aman dan menyenangkan untuk belajar, bermain, dan bersaing.</li>
+            <li><b>Mempromosikan tenis meja sebagai gaya hidup:</b> Kami ingin menunjukkan bahwa tenis meja bukan hanya sekadar olahraga, tetapi juga gaya hidup yang aktif dan sehat. Kami ingin menginspirasi orang untuk mengambil bet dan merasakan sendiri manfaat kebugaran, koordinasi, dan konsentrasi yang luar biasa dari tenis meja.</li>
+            <li><b>Mendukung perkembangan tenis meja Indonesia:</b> Kami berkomitmen untuk mendukung pemain tenis meja Indonesia, baik amatir maupun profesional, untuk mencapai potensi penuh mereka. Kami akan menyediakan informasi, sumber daya, dan peluang kompetisi untuk membantu para pemain meraih prestasi dan membawa kejayaan bagi Indonesia di dunia tenis meja.</li>
+        </ul>
+        <br><b>Nilai-nilai</b></br>
+        <ul>
+            <li><b>Sportivitas:</b> Kami menjunjung tinggi nilai-nilai sportivitas dan fair play dalam segala aspek. Kami percaya bahwa kejujuran, integritas, dan rasa hormat terhadap lawan adalah landasan kesuksesan dan kebanggaan dalam tenis meja.</li>
+            <li><b>Kerja sama:</b> Kami percaya bahwa kekuatan kita terletak pada kerja sama dan persatuan. Kami mendorong kolaborasi antara pemain, pelatih, dan organisasi untuk memajukan tenis meja Indonesia ke tingkat yang lebih tinggi.</li>
+            <li><b>Keunggulan:</b> Kami selalu berusaha untuk mencapai yang terbaik. Kami mendorong para pemain untuk terus berlatih keras, meningkatkan keterampilan, dan menantang diri mereka sendiri untuk mencapai prestasi yang optimal.</li></p>
+        </ul>
+        <P>Misi kami adalah menyebarkan kebahagiaan melalui tenis meja. Kami percaya bahwa olahraga ini dapat menjadi sarana untuk meningkatkan kesehatan, membangun komunitas, dan menginspirasi generasi mendatang. Dengan memberikan informasi yang akurat, konten berkualitas, dan membangun komunitas yang kuat, kami berharap dapat memperkuat daya tarik tenis meja di mata masyarakat global.</P>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; CopyRight 2023-Muhammad Valdhano Zainal-231011700274-01SIFP005</p>
+    </div>
+</body>
+</html>

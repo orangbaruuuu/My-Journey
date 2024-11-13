@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="Website Icon" type="png" href="media/images.png">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style pertemuan 15.css">
+    <STYLE>
+        #content p{
+            font-size: 18px;
+            font-family: verdana;
+            text-align: justify;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            padding-right: 10px;
+            float: left;
+            border-radius: 50px;
+        }
+        .gambar2{
+            width: 200px;
+            height: 200px;
+            padding: 10px 0px 10px 10px;
+            float: right;
+            border-radius: 50px;
+        }
+        h1{
+            text-align: center;
+            color: #706C61;
+        }
+        span{
+            color: black;
+        }
+        .jv{
+           
+            padding: 5px;
+        }
+        .jv{
+            float: right;
+            padding: 5px;
+        }
+    </STYLE>
+    <script src="javatitled-1.js">
+        console.log("Universitas Pamulang");
+    </script>
+   
+</head>
+<body>
+    <div id="header"></div>
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="article.html">Article</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact us.html">Contact</a> 
+        <a href="about us.html">About Us</a>
+    </div>
+    <div id="content">
+        <div class="jv">
+            <script>
+                var waktu = new Date();
+                var jam = waktu.getHours();
+                var tgl = waktu.getDate();
+                var bln = waktu.getMonth();
+                var thn = waktu.getFullYear();
+                var hr = waktu.getDay();
+                var mnt = waktu.getMinutes();
+    
+                var hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
+                var bulan = ["Januari", "Febuari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober","November", "Desember"];
+                
+                if (jam<=9) {
+                        document.write("<br>Selamat Pagi</br>");
+                    }else if(jam<=14) {
+                        document.write("<br>Selamat Siang</br>");
+                    }else if(jam<=18) {
+                        document.write("<br>Selamat Sore</br>");
+                    }else {
+                        document.write("<br>Selamat Malam</br>");
+                    }
+                document.write(hari[hr]+", "+tgl+" "+bulan[bln]+" "+thn+", "+jam+":"+mnt+" WIB");
+                
+            </script>
+            </div> 
+        <h1>Tenis <span>Meja</span></h1>
+        <P><img src="media/table-tennis-1428052_640.jpg">Tenis meja dibuat di Inggris sekitar abad ke-19, di mana dimainkan oleh orang kelas atas sebagai permainan indoor setelah makan malam. Tenis meja mempunyai beberapa nama, salah satunya "whiff whaff", dan disarankan bahwa permainannya pertama kali dikembangkan oleh tentara Inggris di India atau Afrika Selatan, di mana mereka membawanya kembali ke Inggris. Sebaris buku disusun ditengah meja sebagai net, di mana dua bukunya berfungsi untuk memukul bola golf. Nama "ping-pong" digunakan hampir semua negara sebelum perusahaan Inggris J. Jaques & Son Ltd menjadikannya merek dagang pada tahun 1901</P>
+        <P>Tahun 1921, Asosiasi Tenis Meja (TTA) dibuat di Inggris, dan diikuti Federasi Tenis Meja Internasional (ITTF) pada tahun 1926. London menjadi tuan rumah Kejuaraan Dunia resmi pertama tahun 1926. Tahun 1933, Asosiasi Tenis Meja Amerika Serikat, sekarang disebut, Tenis Meja Amerika, dibentuk. Tahun 1930, Edgar Snow berkomentar di Red Star Over China bahwa pihak Komunis di Perang Saudara China mempunyai "hasrat untuk Tenis Meja asal Inggris" yang menurutnya "ganjil". <img class="gambar2" src="media/table-tennis-407489_1280.jpg">Tahun 1950-an, raket yang menggunakan lembaran karet digabung dengan lapaisan spons di dasarnya mengubah permainan secara dramatis, meningkatkan kecepatan dan perputaran bola. Ini diperkenalkan perusahaan alat olahraga Inggris S.W. Hancock Ltd. Penggunaan lem cepat dapat meningkatkan kecepatan dan perputaran lebih jauh, yang menghasilkan perubahan peralatan untuk "menurunkan kecepatan permainannya". Tenis meja diperkenalkan sebagai cabang Olimpiade pada tahun 1988.</P>
+        <p>Olahraga tenis meja mulai dikenal di Indonesia tahun 1930. Saat itu, olahraga ini hanya dilakukan di balai-balai pertemuan orang-orang Belanda sebagai permainan rekreasi. Hanya golongan tertentu dari pribumi saja yang boleh ikut latihan, antara lain keluarga pamong yang menjadi anggota dari balai pertemuan tersebut.</p>
+        <center><iframe src="https://www.youtube.com/embed/YxWaqhuXe8c?si=Yv8QoZfJ2Ukw88HN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+    </div>
+    <div id="footer">
+        <p>&copy; CopyRight 2023-Muhammad Valdhano Zainal-231011700274-01SIFP005</p>
+    </div>
+</body>
+</html>

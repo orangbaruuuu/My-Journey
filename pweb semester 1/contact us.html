@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="Website Icon" type="png" href="media/images.png">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="CSS FORM.css">
+    <script>
+        console.log("Universitas Pamulang");
+    </script>
+    <style>
+        
+        .bungkus{
+            width: 400px;
+            height: 470px;
+            margin: auto;
+            padding: 15px 10px 15px 10px;
+            color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        H1{
+            text-align: center;
+        }
+        input[type=text], textarea, select{
+            width: 100%;
+            background-color: #D5D6C6;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            color: black;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: #D5D6C6;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            color: black;
+            margin-top: 10px;
+            float: right;
+        }
+        input[type=email]{
+            width: 100%;
+            background-color: #D5D6C6;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            color: black;
+           box-sizing: border-box;
+        }
+        input[type=radio]{
+            height: 18px;
+            width: 18px;
+            vertical-align: middle;
+            margin: 10px 5px 15px 10px;
+        }
+        #content{
+            background-image: url(media/istockphoto-1192307192-612x612.jpg);
+            background-size: 100% 100%;
+            margin-top: 0;
+        }
+        .jv{
+           float: right;
+           padding: 5px;
+           color: white;
+       }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="article.html">Article</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact us.html">Contact</a> 
+        <a href="about us.html">About Us</a>
+    </div>
+    <div id="content">
+        <div class="jv">
+            <script>
+                var waktu = new Date();
+                var jam = waktu.getHours();
+                var tgl = waktu.getDate();
+                var bln = waktu.getMonth();
+                var thn = waktu.getFullYear();
+                var hr = waktu.getDay();
+                var mnt = waktu.getMinutes();
+    
+                var hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
+                var bulan = ["Januari", "Febuari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober","November", "Desember"];
+                
+                if (jam<=9) {
+                        document.write("<br>Selamat Pagi</br>");
+                    }else if(jam<=14) {
+                        document.write("<br>Selamat Siang</br>");
+                    }else if(jam<=18) {
+                        document.write("<br>Selamat Sore</br>");
+                    }else {
+                        document.write("<br>Selamat Malam</br>");
+                    }
+                document.write(hari[hr]+", "+tgl+" "+bulan[bln]+" "+thn+", "+jam+":"+mnt+" WIB");
+                
+            </script>
+            </div> 
+        <div class="bungkus">
+            <h1>FORM</h1>
+                Nama        <input type="text" name="nama" size="30" placeholder="Masukan nama anda" value=""/>
+                Alamat 
+                            <textarea cols="30 rows="3" name="alamat" placeholder="Alamat" ></textarea>
+                Asal        <select>
+                            <option>--Pilih Kota--</option>
+                            <option>Jakarta</option>
+                            <option>Lampung</option>
+                            <option>Surabaya</option>
+                            <option>Makassar</option>
+                            <option>Pekanbaru</option>
+                            <option>Jayapura</option>
+                            <option>Balikpapan</option>
+                            </select>
+            E-mail          <input type="email" name="email" size="10"/>
+            <br>Jenis Kelamin   <input type="radio" name="jk" value="laki laki">Laki-laki<input type="radio" name="jk" value="perempuan">Perempuan</br>
+                Komentar    <textarea></textarea>
+                        <form>
+                            <input type="submit" name="submit" value="Kirim">
+                        </form>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; CopyRight 2023-Muhammad Valdhano Zainal-231011700274-01SIFP005</p>
+    </div>
+</body>
+</html>
